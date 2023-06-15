@@ -41,6 +41,7 @@ padding: 1.4rem;
 }
 
 .main-nav a{
+    color: black;
     visibility: collapse;
     height: 40%;
     transition: ease 0.9s; 
