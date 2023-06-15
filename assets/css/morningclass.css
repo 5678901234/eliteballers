@@ -1,0 +1,407 @@
+/* CSS SYNTAX */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    padding: 2rem;
+}
+
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    border: 1px solid;
+}
+
+.nav-header li {
+    display: inline-block;
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+
+.main-nav a{
+    padding: 0.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: linear 0.4s;
+    display: inline-block;
+    color: white;
+    
+}
+
+.nav-header a:hover{
+    
+    color: darkgrey;
+    /* text-decoration: line-through; */
+    text-decoration-color: #0b0303;
+    transform: scale(1.5);
+/* transform: scale(.2); */
+}
+
+.main-nav{
+    /* align-items: baseline; */
+ align-self: baseline;
+ /* background-color: #ccc; */
+ /* flex: 1;   */
+ display: none;
+}
+
+#myid{
+    padding: 2rem;
+    margin: 2rem;
+    background-color: aqua;
+}
+
+.myclass p, h1{
+    color:white;
+    font-style: italic;
+    border: 2px dashed pink;
+    padding: 2rem;
+    margin: 2rem;
+    text-align:left !important;
+}
+
+
+details{
+    
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: beige;
+}
+
+p.para{
+    color: red;
+    padding: 4rem 1rem;
+    background-color: cyan;
+    border: 2px solid yellow;
+    margin: 2rem 0;
+}
+
+/* input[type="text"] { */
+    input{
+    width: 300px;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-bottom: 2px solid darkgray;
+    background-color: transparent;
+    display: block;
+}
+
+input:focus{
+    outline: none;
+} 
+
+
+.bg{
+    /* background-image: url('/assets/img/01-layers-milos-tonchevski-unsplash.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    /* background: linear-gradient(45deg, rgba(0,0,0,0.9), rgba(14,8,246, 0.4)), url('/assets/img/01-layers-milos-tonchevski-unsplash.jpg') fixed no-repeat center; */
+    /* background: radial-gradient( rgba(14,8,246, 0.2) 50%, rgba(0,0,0,0.9)), url('/assets/img/01-layers-milos-tonchevski-unsplash.jpg') fixed no-repeat center; */
+background: conic-gradient( rgba(14,8,246, 0.2) 50%, rgba(0,0,0,0.9)), url('/assets/img/01-layers-milos-tonchevski-unsplash.jpg') fixed no-repeat center;
+
+    background-size: cover;
+    /* cursor: ew-resize; */
+    cursor: pointer;
+    border: 3px solid red;
+    color:#fff;
+    height: 100vh;
+ 
+}
+
+.bg h1{
+    font-size: 2rem;
+    /* opacity: 0.2; */
+    /* visibility: hidden;
+    display: none; */
+display:inline-block;
+ transition: ease 0.9s;
+    /* text-decoration-style: dashed; 
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 2rem; */
+    /* text-decoration: underline dashed 2rem pink;
+    text-align: center; */
+    /* text-decoration: none; */
+}
+
+.bg h1:hover{
+    opacity: 1;
+    transform: scale(1.04);
+}
+
+::-webkit-scrollbar{
+    width: 10px
+}
+
+::-webkit-scrollbar-track{
+    background: rgb(120, 120, 147);
+}
+
+::-webkit-scrollbar-thumb{
+    background: red;
+    border-radius: 360px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #fff;
+}
+
+
+/* CSS POSITIONING */
+
+
+.welcomediv{
+
+
+    animation: myanimation linear 2s;
+    /* transition: ease-in 0.9s; */
+    border: 1px solid red;
+    width: fit-content;
+    /* float: left;
+    clear: both; */
+    /* position: sticky; */
+    /* position: relative; */
+    /* if you don't apply a top value to a sticky positioning it won't work */
+    top: 0;
+    /* right: 0;
+    bottom: 0;
+    left: 0; */
+    color: #0b0303;
+}
+
+pre, b, p {
+
+    color: aqua;
+    background-color: purple;
+    /* text-align: justify; */
+    /* height: 400px; */
+    vertical-align: super;
+    text-indent: 50px;
+    text-transform: capitalize;
+    word-spacing: 0.5rem;
+    line-height: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-variant: small-caps;
+    font-weight: 900;
+}
+
+.backgroundforcontactus{
+    background-image: url(/assets/img/wallpaperflare.com_wallpaper.jpg);
+    background-repeat: none;
+    background-size: cover;
+    color: white;
+
+}
+
+/* p
+{
+    background-color: aqua;
+    color: red;
+    text-align:center;
+}
+
+.wrapper
+{
+    background-color:antiquewhite;
+    padding: 1rem;
+    border: 1px solid red;
+}
+
+body
+{
+    background-color:#ccc;
+    margin: 2 rem;
+}
+
+.wrapper p
+{
+    color:  purple;
+    font-size: larger;
+}
+
+p.mypre {
+ 
+    color: blue;
+} */
+/* .para1,#myid, h1, h2, header
+{
+    background-color: yellow;
+    color: black;
+    text-align:center;
+} */
+
+/* #myid
+{
+    color: yellow;
+    padding: 2rem;
+    background-color: bisque;
+} */
+
+.grid-wrap{
+    display: grid;
+    grid-template-columns: auto;
+    /* grid-template-rows: 40rem 15rem; */
+   /* column-gap: 40px;
+   row-gap: 20px; */
+   gap: 40px 10px;
+    /* gap: 20px; */
+    
+}
+
+.div1{
+    /* grid-column: 1/3; */
+    /* grid-row: 1/ span 2; */
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+    grid-column: 1/ span 2;
+    grid-row: 1/ span 2;
+    border: 1px solid yellow;
+}
+
+.grid-wrap > div{
+    padding: 2rem;
+    background-color: #f1f1f1;
+}
+
+.grid-wrap > div:hover{
+    padding: 2rem;
+    background-color: #f1f1f1;
+    /* transform: rotate(90deg); */
+    transform: skewX(-10deg);
+    cursor: pointer;
+}
+
+
+
+input[type="submit"], input[type="reset"]{
+    background-color: #0b0303;
+    color: #f1f1f1;
+    width: fit-content;
+    margin: 1rem 0;
+    padding: 0.4rem 1 rem;
+    display: inline-block;
+}
+
+fieldset{
+    max-width: 500px;
+    /* margin: 0 auto; */
+}
+
+/* Css media query: media quieries are sued for specifying css rules for different break points or screen sizes. */
+@media only screen and (min-width: 678px){
+    body{
+        background-color: pink;
+    }
+
+    .grid-wrap{
+        
+        grid-template-columns: auto auto auto;
+        transition: 0.4s;
+        overflow: hidden;
+    }
+
+    .main-nav{
+display: flex;
+align-self: baseline;
+
+    }
+
+    .bg h1{
+        font-size: 5rem;
+    }
+    
+    #toggle{
+        display: none;
+    }
+}
+
+
+/* Flip Card animation */
+.flip-card{
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 10000px;
+}
+
+.flip-card-inner{
+    position: relative;
+    width:100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-back{
+    background-color:#2980b9;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+ 
+/*  
+CSS Animations which uses the query @keyframes "animation name"{
+
+} */
+
+/* @keyframes myanimation
+{
+0%{
+transform: scale(.5);
+}
+25%
+{
+    transform: scale(.9);
+}
+50%{
+    transform: scale(1.5);
+}
+100%{
+    transform: scale(1.9);
+}
+} */
+
+
+
+@keyframes myanimation
+{
+0%{
+transform: translate(-100%);
+}
+25%
+{
+    transform: translate(50%);
+}
+50%{
+    transform: translate(100%);
+}
+
+}
